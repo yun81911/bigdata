@@ -1,0 +1,44 @@
+hadoop开发MapReduce程序
+准备工作：
+
+1.设置HADOOP_HOME，指向hadoop安装目录
+
+2.在window下，需要把hadoop/bin那个目录替换下，在网上搜一个对应版本的
+
+3.如果还报org.apache.hadoop.io.nativeio.NativeIO$Windows.access0错，把其中的hadoop.dll复制到c:\windows\system32目录
+
+ 
+
+依赖的jar
+
+1.common
+　　hadoop-2.7.3\share\hadoop\common\hadoop-common-2.7.3.jar
+　　hadoop-2.7.3\share\hadoop\common\lib下的所有
+2.hdfs
+　　hadoop-2.7.3\share\hadoop\hdfs\hadoop-hdfs-2.7.3.jar
+　　hadoop-2.7.3\share\hadoop\hdfs\lib下的所有
+3.mapreduce
+　　hadoop-2.7.3\share\hadoop\mapreduce\hadoop-mapreduce-client-app-2.7.3.jar
+　　hadoop-2.7.3\share\hadoop\mapreduce\hadoop-mapreduce-client-common-2.7.3.jar
+　　hadoop-2.7.3\share\hadoop\mapreduce\hadoop-mapreduce-client-core-2.7.3.jar
+　　hadoop-2.7.3\share\hadoop\mapreduce\hadoop-mapreduce-client-hs-2.7.3.jar
+　　hadoop-2.7.3\share\hadoop\mapreduce\hadoop-mapreduce-client-hs-plugins-2.7.3.jar
+　　hadoop-2.7.3\share\hadoop\mapreduce\hadoop-mapreduce-client-jobclient-2.7.3.jar
+　　hadoop-2.7.3\share\hadoop\mapreduce\hadoop-mapreduce-client-jobclient-2.7.3-tests.jar
+　　hadoop-2.7.3\share\hadoop\mapreduce\hadoop-mapreduce-client-shuffle-2.7.3.jar
+　　hadoop-2.7.3\share\hadoop\mapreduce\lib下的所有
+4.yarn
+　　hadoop-2.7.3\share\hadoop\yarn\lib\hadoop-yarn-api-2.7.3.jar
+　　hadoop-2.7.3\share\hadoop\yarn\lib\hadoop-yarn-applications-distributedshell-2.7.3.jar
+　　hadoop-2.7.3\share\hadoop\yarn\lib\hadoop-yarn-applications-unmanaged-am-launcher-2.7.3.jar
+　　hadoop-2.7.3\share\hadoop\yarn\lib\hadoop-yarn-client-2.7.3.jar
+　　hadoop-2.7.3\share\hadoop\yarn\lib\hadoop-yarn-common-2.7.3.jar
+　　hadoop-2.7.3\share\hadoop\yarn\lib\hadoop-yarn-registry-2.7.3.jar
+　　hadoop-2.7.3\share\hadoop\yarn\lib\hadoop-yarn-server-applicationhistoryservice-2.7.3.jar
+　　hadoop-2.7.3\share\hadoop\yarn\lib\hadoop-yarn-server-common-2.7.3.jar
+　　hadoop-2.7.3\share\hadoop\yarn\lib\hadoop-yarn-server-nodemanager-2.7.3.jar
+　　hadoop-2.7.3\share\hadoop\yarn\lib\hadoop-yarn-server-resourcemanager-2.7.3.jar
+　　hadoop-2.7.3\share\hadoop\yarn\lib\hadoop-yarn-server-sharedcachemanager-2.7.3.jar
+　　hadoop-2.7.3\share\hadoop\yarn\lib\hadoop-yarn-server-tests-2.7.3.jar
+　　hadoop-2.7.3\share\hadoop\yarn\lib\hadoop-yarn-server-web-proxy-2.7.3.jar
+　　hadoop-2.7.3\share\hadoop\yarn\lib下的所有
